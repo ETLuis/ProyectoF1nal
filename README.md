@@ -2,11 +2,11 @@
 
 ### Proyecto 3º evaluación COD
 
-Este proyecto consiste en una serie de minijuegos creados en **java**:
+Este proyecto consiste en una serie de minijuegos creados en NetBeans con GUI utilizando java:
 
-1. Ahorcado
-2. Adivina la bandera
-3. Piedra, papel o tijera
+1. **Ahorcado:** adivina una palabra introduciendo letras dentro de un cierto número de oportunidades.
+2. **Adivina la bandera:** acierta la bandera que aparece en una imágen para sumar puntos.
+3. **Piedra, papel o tijera:** compite contra el ordenador en este popular juego.
 
 Para su creación hemos utilizado varias librerias recogidas en los siguientes enlaces:
 
