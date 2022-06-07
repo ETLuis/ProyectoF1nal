@@ -10,5 +10,5 @@ Este proyecto consiste en una serie de minijuegos creados en **java**:
 
 Para su creación hemos utilizado varias librerias recogidas en los siguientes enlaces:
 
-- SQLite(sqlite-jdbc-3.23.1.jar)
+- [SQLite](sqlite-jdbc-3.23.1.jar)
 
