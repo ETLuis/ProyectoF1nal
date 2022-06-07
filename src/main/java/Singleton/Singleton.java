@@ -15,6 +15,7 @@ public class Singleton {
         try {
             conn = DriverManager.getConnection(url);
             stmt = conn.createStatement();
+            //Capturamos la excepción de SQLException
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -52,6 +53,7 @@ public class Singleton {
             while (rs.next()) {
                 resultado = rs.getString("name");
             }
+
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -59,12 +61,9 @@ public class Singleton {
         return resultado;
     }
 
-    /**
-     * Devuelve el marcador en funcion del usuario
-     * @param name del usuario
-     * @return el marcador
-     */
+
     public Integer getScoreByUser(String name) {
+        //Recogemos la puntuación del usuario con el nombre igual al del usuario
         String sql = "SELECT score FROM usuarios WHERE name='" + name + "' LIMIT 1";
         Integer resultado = 0;
         try {
@@ -82,6 +81,3 @@ public class Singleton {
         return resultado;
     }
 }
-© 2022 GitHub, Inc.
-        Terms
-        Privacy
