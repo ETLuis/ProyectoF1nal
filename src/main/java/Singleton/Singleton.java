@@ -21,10 +21,7 @@ public class Singleton {
         }
     }
 
-    /**
-     * Base del Singleton
-     * @return instancia de la clase Model
-     */
+
     public static Model getInstance(){
         // solo hago el new si es null
         if (instance == null){
@@ -36,12 +33,9 @@ public class Singleton {
 
     // métodos generales que hacen consultas/inserciones/etc
 
-    /**
-     * Busca el nombre segun el id del usuario
-     * @param id del usuario
-     * @return nombre del usuario
-     */
+
     public String getUserById(int id){
+        //Recogemos la nombre del usuario con el id recogido en el método
         String sql = "SELECT name FROM usuarios WHERE id=" + id + " LIMIT 1";
         String resultado = "";
 
